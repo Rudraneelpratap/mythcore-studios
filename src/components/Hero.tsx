@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
   const fullText = 'Stories That Never Die'
@@ -44,10 +45,13 @@ export default function Hero() {
       className="relative w-full min-h-[85vh] overflow-hidden flex items-center justify-center pt-12"
     >
       {/* Background Image */}
-      <img
+      <Image
         src="/fantasy.png"
         alt="Hero background"
-        className="absolute inset-0 w-full h-full object-contain md:object-cover brightness-[1.5] contrast-[1.3] saturate-[1.15] z-0"
+        layout="fill"
+        objectFit="cover"
+        className="brightness-[1.5] contrast-[1.3] saturate-[1.15] z-0"
+        priority
       />
 
       {/* Overlay */}
@@ -66,7 +70,7 @@ export default function Hero() {
           transition={{ duration: 1, delay: 2 }}
           className="text-base md:text-lg max-w-2xl mx-auto text-gray-200 drop-shadow"
         >
-          Where karmic myths meet cinema. Ashen's saga begins here — and it won’t be forgotten.
+          Where karmic myths meet cinema. Ashen&rsquo;s saga begins here — and it won&rsquo;t be forgotten.
         </motion.p>
       </div>
     </motion.section>

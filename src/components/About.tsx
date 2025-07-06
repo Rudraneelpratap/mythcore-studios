@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function About() {
   return (
@@ -48,11 +49,14 @@ export default function About() {
         >
           <div className="flex flex-col md:flex-row items-start gap-6">
             {/* Image */}
-            <img
+            <Image
               src="/my.jpg"
               alt="Author Rudraneel Pratap"
+              width={128}
+              height={128}
               className="w-32 h-32 rounded-full object-cover border-2 border-zinc-700 shadow-md"
             />
+
             {/* Bio */}
             <div>
               <h3 className="text-2xl font-semibold text-white mb-2">About the Author</h3>

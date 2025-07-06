@@ -1,5 +1,6 @@
 'use client'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Announcement() {
   return (
@@ -30,9 +31,11 @@ export default function Announcement() {
         >
           <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Book Cover */}
-            <img
+            <Image
               src="/karmablood-cover.png"
               alt="Karmablood Volume I Cover"
+              width={600}
+              height={800}
               className="rounded-lg w-full object-cover shadow-lg"
             />
 
