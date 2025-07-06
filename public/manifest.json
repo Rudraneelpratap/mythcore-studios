@@ -1,0 +1,22 @@
+
+{
+  "name": "Mythcore Studios",
+  "short_name": "Mythcore",
+  "description": "Karmablood. Mythcore Jr. Stories that awaken myth.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f0f",
+  "theme_color": "#0f0f0f",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
